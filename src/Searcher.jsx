@@ -16,6 +16,7 @@ const Searcher = () => {
     if (datas) setDatas(datas);
   }, []);
   const clearData = () => {
+    localStorage.removeItem("datas");
     setDatas([]);
   };
   const getUserFiltered = (users) => {

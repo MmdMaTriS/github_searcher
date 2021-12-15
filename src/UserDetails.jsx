@@ -70,7 +70,7 @@ const UserDetails = () => {
             </Col>
           </Row>
           <Row gutter={[32, 32]} style={{ marginTop: "20px" }}>
-            {userRepos.map((rep) => (
+            {userRepos?.map((rep) => (
               <Col span={24} key={rep.name}>
                 <div
                   style={{
